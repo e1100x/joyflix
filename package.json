@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pnpm gen:runtime && pnpm gen:manifest && next dev -H 0.0.0.0",
-    "build": "pnpm gen:runtime && pnpm gen:manifest && next build",
+    "dev": "node scripts/convert-config.js && node scripts/generate-manifest.js && next dev -H 0.0.0.0",
+    "build": "node scripts/convert-config.js && node scripts/generate-manifest.js && next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint src --fix && pnpm format",
@@ -38,7 +38,7 @@
     "hls.js": "^1.6.13",
     "lucide-react": "^0.438.0",
     "media-icons": "^1.1.5",
-    "next": "^14.2.23",
+    "next": "^14.2.35",
     "next-pwa": "^5.6.0",
     "next-themes": "^0.4.6",
     "react": "^18.2.0",
@@ -90,5 +90,8 @@
       "prettier -w"
     ]
   },
-  "packageManager": "pnpm@10.14.0"
+  "packageManager": "pnpm@10.14.0",
+  "engines": {
+    "node": "22.x"
+  }
 }

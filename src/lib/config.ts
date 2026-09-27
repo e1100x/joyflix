@@ -178,7 +178,7 @@ async function initConfig() {
               process.env.NEXT_PUBLIC_DOUBAN_PROXY_TYPE || 'direct',
             DoubanProxy: process.env.NEXT_PUBLIC_DOUBAN_PROXY || '',
             DoubanImageProxyType:
-              process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'img3',
+              process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'direct',
             DoubanImageProxy: process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY || '',
           },
           UserConfig: {
@@ -224,7 +224,7 @@ async function initConfig() {
         DoubanProxyType: process.env.NEXT_PUBLIC_DOUBAN_PROXY_TYPE || 'direct',
         DoubanProxy: process.env.NEXT_PUBLIC_DOUBAN_PROXY || '',
         DoubanImageProxyType:
-          process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'img3',
+          process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'direct',
         DoubanImageProxy: process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY || '',
       },
       UserConfig: {
@@ -279,7 +279,7 @@ export async function getConfig(): Promise<AdminConfig> {
     adminConfig.SiteConfig.DoubanProxy =
       process.env.NEXT_PUBLIC_DOUBAN_PROXY || '';
     adminConfig.SiteConfig.DoubanImageProxyType =
-      process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'img3';
+      process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'direct';
     adminConfig.SiteConfig.DoubanImageProxy =
       process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY || '';
 
@@ -412,7 +412,7 @@ export async function resetConfig() {
       DoubanProxyType: process.env.NEXT_PUBLIC_DOUBAN_PROXY_TYPE || 'direct',
       DoubanProxy: process.env.NEXT_PUBLIC_DOUBAN_PROXY || '',
       DoubanImageProxyType:
-        process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'img3',
+        process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'direct',
       DoubanImageProxy: process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY || '',
     },
     UserConfig: {

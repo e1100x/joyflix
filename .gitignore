@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.vercel/
+.env*
+!.env.example
+*.log
+*.tsbuildinfo
+public/sw.js
+public/workbox-*.js
+public/worker-*.js
+next-env.d.ts
+src/lib/runtime.ts
+public/manifest.json
+.vercel

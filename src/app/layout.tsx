@@ -56,7 +56,7 @@ export default async function RootLayout({
   let doubanProxyType = process.env.NEXT_PUBLIC_DOUBAN_PROXY_TYPE || 'direct';
   let doubanProxy = process.env.NEXT_PUBLIC_DOUBAN_PROXY || '';
   let doubanImageProxyType =
-    process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'img3';
+    process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'direct';
   let doubanImageProxy = process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY || '';
   let customCategories = (RuntimeConfig as any).custom_category?.map((category: any) => ({
       name: 'name' in category ? category.name : '',

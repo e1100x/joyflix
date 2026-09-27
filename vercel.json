@@ -10,10 +10,7 @@
       ]
     }
   ],
-  "crons": [
-    {
-      "path": "/api/cron",
-      "schedule": "0 1 * * *"
-    }
-  ]
+  "framework": "nextjs",
+  "installCommand": "corepack pnpm install --frozen-lockfile",
+  "buildCommand": "corepack pnpm build"
 }
